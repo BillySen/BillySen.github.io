@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CR2 Main Page</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="clickbutton.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* Style the header */
+        
+        .crossrefimg {
+            float: left;
+        }
+        
+        .borderexample {
+            border: rgb(15, 72, 228) 5px;
+            border-style: solid;
+        }
+        
+        .nav {
+            line-height: 70px;
+            height: 70px;
+        }
+        
+        .labelinfo {
+            color: rgb(245, 76, 245);
+        }
+        
+        .ainfo {
+            color: rgb(10, 207, 10);
+        }
+        
+        .crossinfo {
+            color: rgb(240, 240, 240);
+        }
+        
+        .menu {
+            float: right;
+        }
+        
+        h2.centralize {
+            text-align: center;
+        }
+        
+        p {
+            text-align: center;
+        }
+        /* [1] The container */
+        
+        .img-hover-zoom {
+            height: 640px;
+            /* [1.1] Set it as per your need */
+            overflow: hidden;
+            /* [1.2] Hide the overflowing of child elements */
+            display: flex;
+            justify-content: center;
+        }
+        /* [2] Transition property for smooth transformation of images */
+        
+        .img-hover-zoom img {
+            transition: transform 1.2s ease;
+        }
+        /* [3] Finally, transforming the image when container gets hovered */
+        
+        .img-hover-zoom:hover img {
+            transform: scale(1.15);
+        }
+        
+        .header1 {
+            background-color: #666;
+            padding: 5px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+        
+        .header2 {
+            background-color: rgb(213, 135, 216);
+            padding: 5px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+        /* Create two columns/boxes that floats next to each other */
+        
+        nav.nav1 {
+            float: left;
+            width: 30%;
+            height: 300px;
+            /* only for demonstration, should be removed */
+            background: #ccc;
+            padding: 20px;
+        }
+        /* Style the list inside the menu */
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 300px;
+            /* only for demonstration, should be removed */
+        }
+        /* Clear floats after the columns */
+        
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* Style the footer */
+        
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            margin-top: 100px;
+        }
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        
+        @media (max-width: 600px) {
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+        
+        li {
+            padding: 13px;
+        }
+        
+        .links line {
+            stroke: #999;
+            stroke-opacity: 0.6;
+        }
+        
+        .nodes circle {
+            stroke: #fff;
+            stroke-width: 1.5px;
+        }
+        
+        .wordcloud-container {
+            display: flex;
+            justify-content: center;
+        }
+        
+        text {
+            font-family: sans-serif;
+            font-size: 10px;
+        }
+        
+        .imgwithtext {
+            border: 5px solid rgb(209, 206, 204);
+            display: flex;
+            flex-direction: row;
+            font-family: sans-serif;
+        }
+        
+        .wordcloud_paragraph {
+            color: #555;
+            justify-content: flex-end;
+            flex-direction: row;
+        }
+        
+        .contentforwordcloud {
+            padding: 5px;
+        }
+        
+        .wordcloudtitlett1 {
+            font-size: 120px;
+            color: #222;
+            line-height: 48px;
+        }
+        
+        .wordcloudtitlet2 {
+            font-size: 24px;
+            color: #222;
+            line-height: 48px;
+        }
+        
+        .CommuDemonstration {
+            border: 5px solid #ccc;
+            display: flex;
+            flex-direction: row;
+            font-family: sans-serif;
+        }
+        
+        .forceLayout {
+            margin-top: 35%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav" style="background:#857070;">
+        <div class="analysiscontainer">
+            <nav class="top-right open">
+                <a class="disc l1">
+                    <div onclick="openPage('pagerank.html')">PageRank</div>
+                </a>
+                <a class="disc l2">
+                    <div onclick="openPage('piechart_degree.html')">Degrees-Refer Relation</div>
+                </a>
+                <a class="disc l3">
+                    <div onclick="openPage('columnchart_mostClosed.html')">Closed Community</div>
+                </a>
+                <a class="disc l4">
+                    <div onclick="openPage('frequency_table.html')">Frequent Community</div>
+                </a>
+                <a class="disc l5 toggle">
+                Analysis
+                </a>
+            </nav>
+        </div>
+        <div class="crossrefimg">
+            <a href="https://crossref.org">
+                <img src="images/crossreflogo.png" alt="" height="70px" width="140px">
+            </a>
+        </div>
+        <div class="menu">
+            <label class="labelinfo">Purport:&nbsp;</label>
+            <a class="crossinfo">makes research outputs easy to find, cite, link, assess, and reuse</a>
+        </div>
+    </div>
+
+    <p>&nbsp;</p>
+    <div class="borderexample">
+        <h1 style="text-align: center;">Project: CR2 - Scientific Community</h1>
+        <h2 style="text-align: center;">Vrije Universiteit Amsterdam - LSDE Group28</h2>
+        <h3 style="text-align: center;">
+            <label class='labelinfo'>Members Info:</label>
+            <a class="ainfo" href="https://github.com/BillySen">@Ruijia Lei</a>&nbsp;&nbsp;
+            <a class="ainfo" href="https://github.com/Leonyyyl">@Yilin Li</a>&nbsp;&nbsp;
+            <a class="ainfo" href="https://github.com/TISNN">@Tianhao Xu</a>
+        </h3>
+    </div>
+
+    <section class="imgwithtext">
+        <div class="img-hover-zoom">
+            <img src="images/wordcloud1_blackBG.png" width="2200" title="WordCloud - Conference/Publisher/Journals" />
+        </div>
+        <div class="contentforwordcloud">
+            <h2 class="wordcloudtitlet2">&nbsp;</h2>
+            <h1 class="wordcloudtitlet1" style="text-align:center;font-size:200%">
+                WordCloud
+            </h1>
+            <h2 class="wordcloudtitlet2" style="text-align:center;">
+                Containers - Journals/Publishers
+            </h2>
+            <p class="wordcloud_paragraph">The goal of this project is to process and analyze the metadata of academic papers from Crossref,</p>
+            <p class="wordcloud_paragraph">and build a directed graph that represents the mutual citation relationship between each academic paper.</p>
+            <p class="wordcloud_paragraph">After that, a scientific community will be formed through related graph clustering algorithms.</p>
+            <p class="wordcloud_paragraph">At the same time, we can know which communities most frequently cite each other’s articles and which ones are closed communities</p>
+        </div>
+    </section>
+
+    <header class="header1">
+        <h3>Scientific Community Demonstration</h4>
+            <h4>with Different Layout Function</h5>
+    </header>
+    <div class="gallery">
+        <!--加一些描述，每个图下方都加描述-->
+        <div class="gallery__photo gallery__photo--p1">
+            <p style="text-align: center;">ForceAtlas2</p>
+            <img src="images/V8768_E72697_weightOver1000_ForceAtlas2-1.png" width="330px" height="330px" alt="" />
+        </div>
+
+        <div class="gallery__photo gallery__photo--p2">
+            <p style="text-align: center;">OpenOrd</p>
+            <img src="images/V8768_E72697_weightOver1000_OpenOrd-1.png" width="330px" height="330px" alt="" />
+        </div>
+
+        <div class="gallery__photo gallery__photo--p3">
+            <p style="text-align: center;">Fruchterman Reingold</p>
+            <img src="images/V8768_E72697_weightOver1000_FR.png" width="330px" height="330px" alt="" />
+        </div>
+
+        <div class="gallery__photo gallery__photo--p4">
+            <p style="text-align: center;">YiFan Hu</p>
+            <img src="images/V8768_E72697_weightOver1000_YiFan Hu-1.png" width="330px" height="330px" alt="" />
+        </div>
+
+    </div>
+
+    <!--加导航去其他统计页面-->
+</body>
+
+<!--for Community detection Demonstration-->
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        height: 100vh;
+        padding-top: 60px;
+        background-color: #ffffff;
+    }
+    
+    .galleryh1 {
+        text-align: center;
+        padding-bottom: 110px;
+        color: #117fe6;
+        letter-spacing: 4px;
+    }
+    
+    .galleryh1:hover {
+        transform: scale(0.8);
+        transition: all 1s;
+        color: chartreuse
+    }
+    
+    .gallery {
+        width: 1000px;
+        margin: 0 auto;
+        position: relative;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+    
+    .gallery__photo {
+        width: 330px;
+        height: 360px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        border-radius: 2px;
+        position: absolute;
+        transition: all 0.5s;
+        z-index: 10;
+        outline-offset: 20px;
+    }
+    
+    .gallery__photo--p1 {
+        top: 0;
+        left: 0;
+    }
+    
+    .gallery__photo--p2 {
+        top: 50px;
+        right: 0;
+        left: 25%;
+    }
+    
+    .gallery__photo--p3 {
+        top: 0px;
+        left: 50%;
+    }
+    
+    .gallery__photo--p4 {
+        top: 50px;
+        left: 75%;
+    }
+    
+    .gallery__photo:hover {
+        outline: 10px solid #14addc;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        transform: scale(1.2) translateY(-20px);
+        z-index: 20;
+    }
+    
+    .gallery:hover .gallery__photo:not(:hover) {
+        transform: scale(0.6);
+    }
+</style>
+
+<!-- for select other analysis demonstration-->
+<script>
+    toggle = document.querySelectorAll(".toggle")[0];
+    nav = document.querySelectorAll("nav")[0];
+    toggle_open_text = 'Analysis';
+    toggle_close_text = 'Back';
+
+    toggle.addEventListener('click', function() {
+        nav.classList.toggle('open');
+
+        if (nav.classList.contains('open')) {
+            toggle.innerHTML = toggle_close_text;
+        } else {
+            toggle.innerHTML = toggle_open_text;
+        }
+    }, false);
+
+    setTimeout(function() {
+        nav.classList.toggle('open');
+    }, 800);
+
+    function openPage(pageUrl) {
+        window.open(pageUrl, '_self').focus();
+    }
+</script>
+
+<div class="forceLayout">
+    <header class="header2">
+        <h3 style="text-align: center;">Most Frequently-Cited Communities</h1>
+            <h4 style="text-align: center;">Interactive Force-Based Layout</h2>
+    </header>
+
+    <style>
+        .links line {
+            stroke: #999;
+            stroke-opacity: 0.6;
+        }
+        
+        .nodes circle {
+            stroke: #fff;
+            stroke-width: 1.5px;
+        }
+        
+        text {
+            font-family: sans-serif;
+            font-size: 15px;
+        }
+    </style>
+    <svg width="1300" height="700"></svg>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script>
+        var svg = d3.select("svg"),
+            width = +svg.attr("width"),
+            height = +svg.attr("height");
+
+        var color = d3.scaleOrdinal(d3.schemeCategory20);
+
+        var simulation = d3.forceSimulation()
+            .force("link", d3.forceLink().id(function(d) {
+                return d.id;
+            }))
+            .force("charge", d3.forceManyBody().strength(-1000))
+            .force("center", d3.forceCenter(width / 2, height / 2));
+
+        d3.json("frequent_relation.json", function(error, graph) {
+            if (error) throw error;
+
+            var link = svg.append("g")
+                .attr("class", "links")
+                .selectAll("line")
+                .data(graph.links)
+                .enter().append("line")
+                .attr("stroke-width", function(d) {
+                    return Math.sqrt(d.value);
+                });
+
+            var node = svg.append("g")
+                .attr("class", "nodes")
+                .selectAll("g")
+                .data(graph.nodes)
+                .enter().append("g")
+
+            var circles = node.append("circle")
+                .attr("r", 10)
+                .attr("fill", function(d) {
+                    return color(d.group);
+                });
+
+            // Create a drag handler and append it to the node object instead
+            var drag_handler = d3.drag()
+                .on("start", dragstarted)
+                .on("drag", dragged)
+                .on("end", dragended);
+
+            drag_handler(node);
+
+            var lables = node.append("text")
+                .text(function(d) {
+                    return d.id;
+                })
+                .attr('x', 6)
+                .attr('y', 3);
+
+            node.append("title")
+                .text(function(d) {
+                    return d.id;
+                });
+
+            simulation
+                .nodes(graph.nodes)
+                .on("tick", ticked);
+
+            simulation.force("link")
+                .links(graph.links);
+
+            function ticked() {
+                link
+                    .attr("x1", function(d) {
+                        return d.source.x;
+                    })
+                    .attr("y1", function(d) {
+                        return d.source.y;
+                    })
+                    .attr("x2", function(d) {
+                        return d.target.x;
+                    })
+                    .attr("y2", function(d) {
+                        return d.target.y;
+                    });
+
+                node
+                    .attr("transform", function(d) {
+                        return "translate(" + d.x + "," + d.y + ")";
+                    })
+            }
+        });
+
+        function dragstarted(d) {
+            if (!d3.event.active) simulation.alphaTarget(0.1).restart();
+            d.fx = d.x;
+            d.fy = d.y;
+        }
+
+        function dragged(d) {
+            d.fx = d3.event.x;
+            d.fy = d3.event.y;
+        }
+
+        function dragended(d) {
+            if (!d3.event.active) simulation.alphaTarget(1);
+            d.fx = null;
+            d.fy = null;
+        }
+    </script>
+</div>

@@ -1,0 +1,62 @@
+comm_id,comm_title,result
+410,Occupational Therapy,0.95275374
+36,Physical Education,0.941343761
+405,Public Administration,0.941034976
+65,Linguistic,0.93965033
+415,Economic History,0.924067277
+400,Hygiene,0.92163631
+27,Philosophy,0.919644342
+106,Wound Care and Nursing,0.905041836
+503,Educational Psychology,0.897713377
+404,Financial Economics,0.896256405
+26,Oral Pathology and Health,0.892966537
+2,Ophthalmology,0.882171033
+1,Applied Algebra and Methematic,0.863765679
+14,Parallel and Distributed Computing,0.859310829
+63,Textile Insititute,0.853875734
+402,Arthroplasty,0.85117772
+411,Biometrics and Statistics,0.841164139
+107,Urology,0.832153805
+409,Injury Prevention and Safety,0.823830726
+511,Marketing and Consumer Psychology,0.813328812
+401,Structures and Engineering,0.803881203
+111,Dermatopathology,0.801436631
+510,Career Assessment and Psychology,0.788364561
+509,Sociology,0.787074588
+507,International Business Management and Human Behavior,0.778006028
+15,Geomorphology,0.775976096
+105,Clinics,0.753983394
+11,Food Science and Nutrition,0.751821907
+101,Surgery,0.745007345
+109,Heart and Cardiology,0.742773495
+412,Clinical Imaging and Radiology,0.735468838
+505,Child Development and Adolescence Research,0.731269949
+414,Chemical and Physical Engineering,0.704996354
+406,"Biogeography, Ecology and Biology",0.697091202
+504,"Psychology, Behavioristics and Pedagogy",0.69466999
+500,Gerontology,0.687013805
+403,Biochemical and Ecologyical Engineering,0.677705605
+110,Liver Disease,0.674837654
+501,Drug and Alcohol,0.673982026
+100,Allergy,0.66536994
+408,Marine Biology and Ecology,0.664487533
+103,Health Care,0.662246977
+407,Neurological Science,0.660697508
+205,Organometallic and Medicinal Chemistry,0.652754097
+502,Psychiatry,0.649558591
+413,Botany and Plant Biology,0.630294586
+302,"Neuroscience, Cytology and Brain Science",0.629412559
+305,Reproductive Endorinology and Metabolism,0.606418091
+202,"Physical, Mathematical and Engineering Science",0.584879835
+104,Pathology and Oncology,0.574724289
+203,Polymer and Pharmaceutical Science,0.568196455
+306,Infectious Diseases and Virology,0.563386948
+108,Hematology,0.558970055
+200,Analytical Chemistry,0.551976801
+102,Pharmacy and Public Health,0.517806404
+303,Immunology and Rheumatology,0.487181915
+201,Chemical Physic,0.442734557
+204,Nanotechnology and Materical Chemistry,0.423725296
+301,"Cellular, Molecular and Genetic Boilogy",0.404757568
+304,Nephrology and Biochemistry,0.365302848
+300,Micrology and Boichemistry,0.11085956

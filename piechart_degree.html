@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Analysis</title>
+    <script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-core.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-pie.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-ui.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-exports.min.js"></script>
+    <link href="https://cdn.anychart.com/releases/v8/css/anychart-ui.min.css" type="text/css" rel="stylesheet">
+    <link href="https://cdn.anychart.com/releases/v8/fonts/css/anychart-font.min.css" type="text/css" rel="stylesheet">
+</head>
+
+<style>
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        text-align: center;
+        vertical-align: middle;
+    }
+    
+    #container1 {
+        width: 100%;
+        height: 5%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    #container2 {
+        width: 100%;
+        height: 47.5%;
+        margin-bottom: 1px;
+        padding: 0;
+    }
+    
+    #container3 {
+        width: 100%;
+        height: 47.5%;
+        margin-bottom: 1px;
+        padding: 0;
+    }
+    
+    .borderexample {
+        border: saddlebrown 5px;
+        border-style: solid;
+    }
+    
+    p {
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 8%;
+        margin-right: 8%;
+        font-size: 21px;
+    }
+</style>
+
+<body>
+    <div id="container1" style="width: 100%; height: 22%">
+        <h1>Analysis of Degrees</h1>
+        <p class="borderexample">Indegree means the one who is cited by others, Outdegree means the one who cites others'. For the data, the one who has most indegree contains 156541 records, the one who has most outdegree contains 8023 records. The chart shows the distribution
+            by the range of records amount. Who have a very large number of entries is always a small part. The chart is interative, can be exploded when click on it.
+        </p>
+    </div>
+    <div id="container2" style="width: 100%; height: 100%"></div>
+    <div id="container3" style="width: 100%; height: 100%"></div>
+    <script>
+        /*chart code*/
+        anychart.onDocumentReady(function() {
+            // set the data
+            var data = [{
+                x: "Less Than 20",
+                value: 29740971
+            }, {
+                x: "20-50",
+                value: 5790308
+            }, {
+                x: "50-100",
+                value: 1900274
+            }, {
+                x: "100-500",
+                value: 1002771
+            }, {
+                x: "500-1000",
+                value: 48615
+            }, {
+                x: "1000-3000",
+                value: 15927
+            }, {
+                x: "3000-5000",
+                value: 1373
+            }, {
+                x: "Over 5000",
+                value: 776
+            }, ];
+
+            var data2 = [{
+                x: "Less Than 20",
+                value: 27233355
+            }, {
+                x: "20-50",
+                value: 10538567
+            }, {
+                x: "50-100",
+                value: 1847787
+            }, {
+                x: "100-500",
+                value: 431324
+            }, {
+                x: "500-1000",
+                value: 3904
+            }, {
+                x: "1000-3000",
+                value: 1134
+            }, {
+                x: "3000-5000",
+                value: 38
+            }, {
+                x: "Over 5000",
+                value: 27
+            }, ];
+
+            // create the chart
+            var chart1 = anychart.pie();
+            var chart2 = anychart.pie();
+
+            // set the chart title
+            chart1.title("InDegree(referred by others) Distribution");
+            chart2.title("OutDegree(refers others) Distribution");
+
+            // add the data
+            chart1.data(data);
+            chart2.data(data2);
+
+            // display the chart in the container
+            chart1.container('container2');
+            chart1.draw();
+            chart2.container('container3');
+            chart2.draw();
+
+            // set legend position
+            chart1.legend().position("right");
+            chart2.legend().position("right");
+            // set items layout
+            chart1.legend().itemsLayout("vertical");
+            chart2.legend().itemsLayout("vertical");
+
+        });
+
+        function drawer() {
+            // if missing (not correct data), then skipping this point drawing
+            if (this.missing) {
+                return;
+            }
+
+            // get shapes group
+            var shapes = this.shapes || this.getShapesGroup(this.pointState);
+            // calculate the left value of the x-axis
+            var leftX = this.x - this.pointWidth / 2;
+            // calculate the right value of the x-axis
+            var rightX = leftX + this.pointWidth;
+            // calculate the half of point width
+            var rx = this.pointWidth / 2;
+
+            shapes.path
+                // resets all 'line' operations
+                .clear()
+                // draw column with rounded edges
+                .moveTo(leftX, this.zero)
+                .lineTo(leftX, this.value + rx)
+                .circularArc(leftX + rx, this.value + rx, rx, rx, 180, 180)
+                .lineTo(rightX, this.zero)
+                // close by connecting the last point with the first straight line
+                .close();
+        }
+    </script>
+</body>
+
+</html>

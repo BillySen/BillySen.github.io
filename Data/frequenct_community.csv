@@ -1,0 +1,258 @@
+src_comm_id,src_comm_title,dst_comm_id,dst_comm_title,result
+301,"Cellular, Molecular and Genetic Boilogy",300,Micrology and Boichemistry,2.230385155168894
+300,Micrology and Boichemistry,304,Nephrology and Biochemistry,1.4301940440351497
+302,"Neuroscience, Cytology and Brain Science",300,Micrology and Boichemistry,1.233786139015793
+304,Nephrology and Biochemistry,301,"Cellular, Molecular and Genetic Boilogy",1.214184272659312
+204,Nanotechnology and Materical Chemistry,205,Organometallic and Medicinal Chemistry,1.0794797615118155
+300,Micrology and Boichemistry,303,Immunology and Rheumatology,0.9690741795857354
+203,Polymer and Pharmaceutical Science,204,Nanotechnology and Materical Chemistry,0.9026660304900319
+204,Nanotechnology and Materical Chemistry,202,"Physical, Mathematical and Engineering Science",0.7786720111924644
+201,Chemical Physic,205,Organometallic and Medicinal Chemistry,0.6084579498880636
+300,Micrology and Boichemistry,306,Infectious Diseases and Virology,0.5868082161244311
+300,Micrology and Boichemistry,15,Geomorphology,0.5843716258240329
+300,Micrology and Boichemistry,406,"Biogeography, Ecology and Biology",0.584305629702486
+201,Chemical Physic,204,Nanotechnology and Materical Chemistry,0.5717275115835175
+301,"Cellular, Molecular and Genetic Boilogy",302,"Neuroscience, Cytology and Brain Science",0.5659615620828333
+301,"Cellular, Molecular and Genetic Boilogy",303,Immunology and Rheumatology,0.558835967807307
+204,Nanotechnology and Materical Chemistry,300,Micrology and Boichemistry,0.5321809774061258
+302,"Neuroscience, Cytology and Brain Science",304,Nephrology and Biochemistry,0.5301855903304961
+301,"Cellular, Molecular and Genetic Boilogy",306,Infectious Diseases and Virology,0.49409198911653335
+201,Chemical Physic,202,"Physical, Mathematical and Engineering Science",0.4530873070489709
+300,Micrology and Boichemistry,413,Botany and Plant Biology,0.43997517634864886
+507,International Business Management and Human Behavior,511,Marketing and Consumer Psychology,0.4243338328016237
+306,Infectious Diseases and Virology,303,Immunology and Rheumatology,0.39889589617284144
+200,Analytical Chemistry,204,Nanotechnology and Materical Chemistry,0.3965886239444597
+403,Biochemical and Ecologyical Engineering,300,Micrology and Boichemistry,0.39221039092654447
+108,Hematology,303,Immunology and Rheumatology,0.3888746098331024
+300,Micrology and Boichemistry,202,"Physical, Mathematical and Engineering Science",0.3813272094766861
+403,Biochemical and Ecologyical Engineering,204,Nanotechnology and Materical Chemistry,0.3792896282264124
+300,Micrology and Boichemistry,305,Reproductive Endorinology and Metabolism,0.3670981994113549
+301,"Cellular, Molecular and Genetic Boilogy",406,"Biogeography, Ecology and Biology",0.3627737279169867
+301,"Cellular, Molecular and Genetic Boilogy",413,Botany and Plant Biology,0.345372156203986
+407,Neurological Science,302,"Neuroscience, Cytology and Brain Science",0.34397009961489033
+414,Chemical and Physical Engineering,204,Nanotechnology and Materical Chemistry,0.316394200902532
+408,Marine Biology and Ecology,406,"Biogeography, Ecology and Biology",0.3051392848817773
+203,Polymer and Pharmaceutical Science,202,"Physical, Mathematical and Engineering Science",0.29499222776786377
+304,Nephrology and Biochemistry,305,Reproductive Endorinology and Metabolism,0.2930366876570109
+104,Pathology and Oncology,301,"Cellular, Molecular and Genetic Boilogy",0.281413670958359
+502,Psychiatry,302,"Neuroscience, Cytology and Brain Science",0.28023984471730656
+305,Reproductive Endorinology and Metabolism,301,"Cellular, Molecular and Genetic Boilogy",0.27079944867788597
+413,Botany and Plant Biology,406,"Biogeography, Ecology and Biology",0.2626368199788488
+301,"Cellular, Molecular and Genetic Boilogy",204,Nanotechnology and Materical Chemistry,0.26115975157422583
+205,Organometallic and Medicinal Chemistry,300,Micrology and Boichemistry,0.2557122803193656
+202,"Physical, Mathematical and Engineering Science",1,Applied Algebra and Methematic,0.24687285518735635
+300,Micrology and Boichemistry,104,Pathology and Oncology,0.23981844258267776
+300,Micrology and Boichemistry,1,Applied Algebra and Methematic,0.23168027721456122
+300,Micrology and Boichemistry,108,Hematology,0.22238191549062367
+109,Heart and Cardiology,102,Pharmacy and Public Health,0.21878312654042523
+303,Immunology and Rheumatology,304,Nephrology and Biochemistry,0.21639074875116676
+300,Micrology and Boichemistry,201,Chemical Physic,0.2102598492108957
+203,Polymer and Pharmaceutical Science,205,Organometallic and Medicinal Chemistry,0.20790583554345893
+505,Child Development and Adolescence Research,504,"Psychology, Behavioristics and Pedagogy",0.20569084271143062
+504,"Psychology, Behavioristics and Pedagogy",507,International Business Management and Human Behavior,0.20484802511870412
+306,Infectious Diseases and Virology,304,Nephrology and Biochemistry,0.19343113298239523
+205,Organometallic and Medicinal Chemistry,304,Nephrology and Biochemistry,0.1865148723466043
+408,Marine Biology and Ecology,300,Micrology and Boichemistry,0.18625789543534094
+414,Chemical and Physical Engineering,403,Biochemical and Ecologyical Engineering,0.18451638400045164
+302,"Neuroscience, Cytology and Brain Science",305,Reproductive Endorinology and Metabolism,0.17714939976698044
+203,Polymer and Pharmaceutical Science,201,Chemical Physic,0.176883628092975
+203,Polymer and Pharmaceutical Science,300,Micrology and Boichemistry,0.17428268179133144
+301,"Cellular, Molecular and Genetic Boilogy",108,Hematology,0.17166022971995357
+502,Psychiatry,505,Child Development and Adolescence Research,0.1667231047559536
+102,Pharmacy and Public Health,305,Reproductive Endorinology and Metabolism,0.16514069648525545
+104,Pathology and Oncology,108,Hematology,0.16458180568036676
+403,Biochemical and Ecologyical Engineering,406,"Biogeography, Ecology and Biology",0.16251575975428195
+403,Biochemical and Ecologyical Engineering,408,Marine Biology and Ecology,0.15480316886780812
+403,Biochemical and Ecologyical Engineering,15,Geomorphology,0.15311296288126974
+304,Nephrology and Biochemistry,102,Pharmacy and Public Health,0.146137783313078
+301,"Cellular, Molecular and Genetic Boilogy",403,Biochemical and Ecologyical Engineering,0.14322945246560204
+302,"Neuroscience, Cytology and Brain Science",504,"Psychology, Behavioristics and Pedagogy",0.1367005221889451
+414,Chemical and Physical Engineering,201,Chemical Physic,0.13437982047556588
+403,Biochemical and Ecologyical Engineering,413,Botany and Plant Biology,0.13090138300227733
+201,Chemical Physic,200,Analytical Chemistry,0.12687338814809423
+200,Analytical Chemistry,205,Organometallic and Medicinal Chemistry,0.12560176006146828
+504,"Psychology, Behavioristics and Pedagogy",511,Marketing and Consumer Psychology,0.12218165233462468
+304,Nephrology and Biochemistry,413,Botany and Plant Biology,0.11821640585913182
+502,Psychiatry,504,"Psychology, Behavioristics and Pedagogy",0.11690561108514276
+201,Chemical Physic,304,Nephrology and Biochemistry,0.11000730662951269
+403,Biochemical and Ecologyical Engineering,306,Infectious Diseases and Virology,0.10624243046624253
+102,Pharmacy and Public Health,502,Psychiatry,0.09996627256812597
+414,Chemical and Physical Engineering,203,Polymer and Pharmaceutical Science,0.09714626206573851
+200,Analytical Chemistry,403,Biochemical and Ecologyical Engineering,0.09654294941110611
+300,Micrology and Boichemistry,200,Analytical Chemistry,0.095753451509185
+304,Nephrology and Biochemistry,109,Heart and Cardiology,0.09483260938658757
+302,"Neuroscience, Cytology and Brain Science",303,Immunology and Rheumatology,0.08730430944235834
+304,Nephrology and Biochemistry,200,Analytical Chemistry,0.08574720915687836
+301,"Cellular, Molecular and Genetic Boilogy",102,Pharmacy and Public Health,0.08111451783158047
+102,Pharmacy and Public Health,104,Pathology and Oncology,0.08053232876230042
+301,"Cellular, Molecular and Genetic Boilogy",205,Organometallic and Medicinal Chemistry,0.07883884110406203
+202,"Physical, Mathematical and Engineering Science",414,Chemical and Physical Engineering,0.07822483589130229
+102,Pharmacy and Public Health,306,Infectious Diseases and Virology,0.07738665662098987
+301,"Cellular, Molecular and Genetic Boilogy",203,Polymer and Pharmaceutical Science,0.07457408903494514
+302,"Neuroscience, Cytology and Brain Science",505,Child Development and Adolescence Research,0.07454047837434773
+15,Geomorphology,408,Marine Biology and Ecology,0.0701659559163541
+108,Hematology,304,Nephrology and Biochemistry,0.06985800424312354
+205,Organometallic and Medicinal Chemistry,202,"Physical, Mathematical and Engineering Science",0.06766699897245015
+104,Pathology and Oncology,303,Immunology and Rheumatology,0.06625846203911057
+301,"Cellular, Molecular and Genetic Boilogy",408,Marine Biology and Ecology,0.06586979560861206
+200,Analytical Chemistry,301,"Cellular, Molecular and Genetic Boilogy",0.06358712915871083
+303,Immunology and Rheumatology,102,Pharmacy and Public Health,0.058941634567953066
+403,Biochemical and Ecologyical Engineering,304,Nephrology and Biochemistry,0.05561292952626841
+303,Immunology and Rheumatology,408,Marine Biology and Ecology,0.0551834677923205
+203,Polymer and Pharmaceutical Science,200,Analytical Chemistry,0.050002169912455575
+305,Reproductive Endorinology and Metabolism,408,Marine Biology and Ecology,0.049715395176213796
+300,Micrology and Boichemistry,102,Pharmacy and Public Health,0.04835468559106476
+305,Reproductive Endorinology and Metabolism,109,Heart and Cardiology,0.04703965445763153
+403,Biochemical and Ecologyical Engineering,1,Applied Algebra and Methematic,0.045456974381205065
+201,Chemical Physic,1,Applied Algebra and Methematic,0.04544240608959474
+202,"Physical, Mathematical and Engineering Science",301,"Cellular, Molecular and Genetic Boilogy",0.04466430072880903
+203,Polymer and Pharmaceutical Science,304,Nephrology and Biochemistry,0.04379993086495621
+300,Micrology and Boichemistry,407,Neurological Science,0.04145393815172909
+305,Reproductive Endorinology and Metabolism,303,Immunology and Rheumatology,0.039520352219458973
+108,Hematology,102,Pharmacy and Public Health,0.03826482425494755
+200,Analytical Chemistry,202,"Physical, Mathematical and Engineering Science",0.03770496767980995
+502,Psychiatry,301,"Cellular, Molecular and Genetic Boilogy",0.035528423891023266
+300,Micrology and Boichemistry,414,Chemical and Physical Engineering,0.0355150391646742
+403,Biochemical and Ecologyical Engineering,102,Pharmacy and Public Health,0.03320117742893308
+300,Micrology and Boichemistry,109,Heart and Cardiology,0.03299097793070883
+1,Applied Algebra and Methematic,414,Chemical and Physical Engineering,0.03280999309226874
+15,Geomorphology,1,Applied Algebra and Methematic,0.03196251696377581
+300,Micrology and Boichemistry,502,Psychiatry,0.03165636656571672
+102,Pharmacy and Public Health,407,Neurological Science,0.03154371397277281
+306,Infectious Diseases and Virology,406,"Biogeography, Ecology and Biology",0.030431436391300297
+301,"Cellular, Molecular and Genetic Boilogy",201,Chemical Physic,0.030207562532327238
+200,Analytical Chemistry,15,Geomorphology,0.030031514552307976
+304,Nephrology and Biochemistry,104,Pathology and Oncology,0.029934139626332835
+102,Pharmacy and Public Health,302,"Neuroscience, Cytology and Brain Science",0.02991682943466895
+407,Neurological Science,104,Pathology and Oncology,0.02963529559862048
+414,Chemical and Physical Engineering,15,Geomorphology,0.029546813077412342
+502,Psychiatry,407,Neurological Science,0.02884037828885365
+406,"Biogeography, Ecology and Biology",15,Geomorphology,0.028589335102189358
+109,Heart and Cardiology,301,"Cellular, Molecular and Genetic Boilogy",0.02858389620035745
+303,Immunology and Rheumatology,204,Nanotechnology and Materical Chemistry,0.0270192499087901
+204,Nanotechnology and Materical Chemistry,304,Nephrology and Biochemistry,0.026747498172468555
+302,"Neuroscience, Cytology and Brain Science",406,"Biogeography, Ecology and Biology",0.026702663334022284
+201,Chemical Physic,403,Biochemical and Ecologyical Engineering,0.02661964892309994
+414,Chemical and Physical Engineering,205,Organometallic and Medicinal Chemistry,0.025690373440227326
+403,Biochemical and Ecologyical Engineering,203,Polymer and Pharmaceutical Science,0.025242151151775975
+406,"Biogeography, Ecology and Biology",305,Reproductive Endorinology and Metabolism,0.025088384830357243
+305,Reproductive Endorinology and Metabolism,502,Psychiatry,0.024701323238276354
+205,Organometallic and Medicinal Chemistry,413,Botany and Plant Biology,0.023972465778427817
+303,Immunology and Rheumatology,203,Polymer and Pharmaceutical Science,0.022295128735468225
+306,Infectious Diseases and Virology,413,Botany and Plant Biology,0.02202816807581065
+108,Hematology,109,Heart and Cardiology,0.021109048590005
+414,Chemical and Physical Engineering,507,International Business Management and Human Behavior,0.021022580540459683
+205,Organometallic and Medicinal Chemistry,403,Biochemical and Ecologyical Engineering,0.020848646950449457
+403,Biochemical and Ecologyical Engineering,305,Reproductive Endorinology and Metabolism,0.018681714432304788
+301,"Cellular, Molecular and Genetic Boilogy",407,Neurological Science,0.018632146395506276
+304,Nephrology and Biochemistry,406,"Biogeography, Ecology and Biology",0.018607638764729432
+301,"Cellular, Molecular and Genetic Boilogy",15,Geomorphology,0.01842246793210662
+201,Chemical Physic,413,Botany and Plant Biology,0.01789377186183246
+205,Organometallic and Medicinal Chemistry,302,"Neuroscience, Cytology and Brain Science",0.01781319019992456
+414,Chemical and Physical Engineering,200,Analytical Chemistry,0.017162887839036158
+104,Pathology and Oncology,305,Reproductive Endorinology and Metabolism,0.01662310228622058
+302,"Neuroscience, Cytology and Brain Science",204,Nanotechnology and Materical Chemistry,0.016313232210249037
+413,Botany and Plant Biology,408,Marine Biology and Ecology,0.016098135524666133
+109,Heart and Cardiology,407,Neurological Science,0.015483692294135603
+504,"Psychology, Behavioristics and Pedagogy",301,"Cellular, Molecular and Genetic Boilogy",0.015301694139169531
+203,Polymer and Pharmaceutical Science,302,"Neuroscience, Cytology and Brain Science",0.013889165754698845
+302,"Neuroscience, Cytology and Brain Science",507,International Business Management and Human Behavior,0.012157156608302567
+108,Hematology,306,Infectious Diseases and Virology,0.011970686820290887
+15,Geomorphology,204,Nanotechnology and Materical Chemistry,0.011830995840075699
+305,Reproductive Endorinology and Metabolism,200,Analytical Chemistry,0.010740614935587763
+102,Pharmacy and Public Health,203,Polymer and Pharmaceutical Science,0.0098595621282076
+306,Infectious Diseases and Virology,502,Psychiatry,0.009779570264210238
+104,Pathology and Oncology,502,Psychiatry,0.009718325687229431
+201,Chemical Physic,15,Geomorphology,0.009397041636154917
+302,"Neuroscience, Cytology and Brain Science",108,Hematology,0.00934962139279583
+304,Nephrology and Biochemistry,408,Marine Biology and Ecology,0.00916971255681802
+108,Hematology,203,Polymer and Pharmaceutical Science,0.009099488034716805
+302,"Neuroscience, Cytology and Brain Science",109,Heart and Cardiology,0.008839076490896599
+408,Marine Biology and Ecology,306,Infectious Diseases and Virology,0.008700732036140899
+413,Botany and Plant Biology,204,Nanotechnology and Materical Chemistry,0.00839641867699586
+109,Heart and Cardiology,502,Psychiatry,0.00759802773672224
+204,Nanotechnology and Materical Chemistry,406,"Biogeography, Ecology and Biology",0.007594369720937443
+104,Pathology and Oncology,302,"Neuroscience, Cytology and Brain Science",0.007566414421021521
+303,Immunology and Rheumatology,502,Psychiatry,0.007332655728183534
+403,Biochemical and Ecologyical Engineering,302,"Neuroscience, Cytology and Brain Science",0.0071712747314914465
+505,Child Development and Adolescence Research,407,Neurological Science,0.006816621813540904
+108,Hematology,502,Psychiatry,0.00660379736886205
+104,Pathology and Oncology,306,Infectious Diseases and Virology,0.006558750723909779
+300,Micrology and Boichemistry,504,"Psychology, Behavioristics and Pedagogy",0.00596981989595658
+204,Nanotechnology and Materical Chemistry,306,Infectious Diseases and Virology,0.005937734453287723
+1,Applied Algebra and Methematic,200,Analytical Chemistry,0.005928532604127559
+303,Immunology and Rheumatology,109,Heart and Cardiology,0.005857496586675306
+202,"Physical, Mathematical and Engineering Science",403,Biochemical and Ecologyical Engineering,0.005629074859240334
+407,Neurological Science,303,Immunology and Rheumatology,0.005579413477858758
+406,"Biogeography, Ecology and Biology",414,Chemical and Physical Engineering,0.005471195403419604
+305,Reproductive Endorinology and Metabolism,504,"Psychology, Behavioristics and Pedagogy",0.005278543273956914
+505,Child Development and Adolescence Research,301,"Cellular, Molecular and Genetic Boilogy",0.005162307698390196
+205,Organometallic and Medicinal Chemistry,305,Reproductive Endorinology and Metabolism,0.004677590595014479
+303,Immunology and Rheumatology,205,Organometallic and Medicinal Chemistry,0.004483999564654463
+204,Nanotechnology and Materical Chemistry,108,Hematology,0.004418287211762976
+202,"Physical, Mathematical and Engineering Science",15,Geomorphology,0.004251520528832478
+203,Polymer and Pharmaceutical Science,306,Infectious Diseases and Virology,0.004195280217021982
+202,"Physical, Mathematical and Engineering Science",304,Nephrology and Biochemistry,0.0041115255489193436
+102,Pharmacy and Public Health,504,"Psychology, Behavioristics and Pedagogy",0.00406118150022334
+15,Geomorphology,302,"Neuroscience, Cytology and Brain Science",0.003974713882371277
+507,International Business Management and Human Behavior,505,Child Development and Adolescence Research,0.003909325702591001
+302,"Neuroscience, Cytology and Brain Science",202,"Physical, Mathematical and Engineering Science",0.003888627378182051
+300,Micrology and Boichemistry,505,Child Development and Adolescence Research,0.0037508050970536605
+305,Reproductive Endorinology and Metabolism,15,Geomorphology,0.0037369704533472374
+504,"Psychology, Behavioristics and Pedagogy",306,Infectious Diseases and Virology,0.0036021241601610662
+109,Heart and Cardiology,104,Pathology and Oncology,0.003593324104248532
+504,"Psychology, Behavioristics and Pedagogy",104,Pathology and Oncology,0.0035869168960001104
+305,Reproductive Endorinology and Metabolism,204,Nanotechnology and Materical Chemistry,0.0034853770403821776
+306,Infectious Diseases and Virology,205,Organometallic and Medicinal Chemistry,0.00341817401511515
+204,Nanotechnology and Materical Chemistry,104,Pathology and Oncology,0.0032691708387128106
+200,Analytical Chemistry,408,Marine Biology and Ecology,0.003241027220088842
+414,Chemical and Physical Engineering,301,"Cellular, Molecular and Genetic Boilogy",0.003032468769276202
+511,Marketing and Consumer Psychology,305,Reproductive Endorinology and Metabolism,0.003010327946196118
+511,Marketing and Consumer Psychology,302,"Neuroscience, Cytology and Brain Science",0.003000065544503157
+1,Applied Algebra and Methematic,302,"Neuroscience, Cytology and Brain Science",0.002952437905024829
+104,Pathology and Oncology,413,Botany and Plant Biology,0.002923547249123378
+305,Reproductive Endorinology and Metabolism,108,Hematology,0.002904152217633476
+205,Organometallic and Medicinal Chemistry,15,Geomorphology,0.0026101968991323844
+504,"Psychology, Behavioristics and Pedagogy",403,Biochemical and Ecologyical Engineering,0.0025826994315451316
+305,Reproductive Endorinology and Metabolism,407,Neurological Science,0.0025756624340574014
+302,"Neuroscience, Cytology and Brain Science",306,Infectious Diseases and Virology,0.00242788386573665
+414,Chemical and Physical Engineering,408,Marine Biology and Ecology,0.002340776645051074
+200,Analytical Chemistry,306,Infectious Diseases and Virology,0.002295121036913093
+302,"Neuroscience, Cytology and Brain Science",201,Chemical Physic,0.002290897929233781
+305,Reproductive Endorinology and Metabolism,203,Polymer and Pharmaceutical Science,0.0021614977291383036
+502,Psychiatry,403,Biochemical and Ecologyical Engineering,0.0021227608954785195
+301,"Cellular, Molecular and Genetic Boilogy",1,Applied Algebra and Methematic,0.0020485449963828463
+407,Neurological Science,304,Nephrology and Biochemistry,0.0019413647022525587
+203,Polymer and Pharmaceutical Science,15,Geomorphology,0.001936142119228911
+108,Hematology,407,Neurological Science,0.0018028380250818606
+200,Analytical Chemistry,104,Pathology and Oncology,0.0017052933289047989
+507,International Business Management and Human Behavior,403,Biochemical and Ecologyical Engineering,0.001690763097350211
+200,Analytical Chemistry,302,"Neuroscience, Cytology and Brain Science",0.001635688217682685
+203,Polymer and Pharmaceutical Science,104,Pathology and Oncology,0.0016032443009675239
+205,Organometallic and Medicinal Chemistry,102,Pharmacy and Public Health,0.00147655864545764
+205,Organometallic and Medicinal Chemistry,1,Applied Algebra and Methematic,0.0011610765221995412
+408,Marine Biology and Ecology,302,"Neuroscience, Cytology and Brain Science",0.0011223083691664039
+413,Botany and Plant Biology,203,Polymer and Pharmaceutical Science,0.0011073220543479677
+511,Marketing and Consumer Psychology,414,Chemical and Physical Engineering,0.0010262864326240054
+511,Marketing and Consumer Psychology,403,Biochemical and Ecologyical Engineering,9.99451210426275E-4
+413,Botany and Plant Biology,303,Immunology and Rheumatology,9.696405172306838E-4
+413,Botany and Plant Biology,15,Geomorphology,9.617382476375167E-4
+300,Micrology and Boichemistry,507,International Business Management and Human Behavior,9.54559326981768E-4
+406,"Biogeography, Ecology and Biology",303,Immunology and Rheumatology,9.381574813981737E-4
+304,Nephrology and Biochemistry,502,Psychiatry,8.871193264095202E-4
+15,Geomorphology,306,Infectious Diseases and Virology,8.191530326801962E-4
+507,International Business Management and Human Behavior,301,"Cellular, Molecular and Genetic Boilogy",7.229226875279902E-4
+511,Marketing and Consumer Psychology,301,"Cellular, Molecular and Genetic Boilogy",6.334621220523716E-4
+204,Nanotechnology and Materical Chemistry,408,Marine Biology and Ecology,6.144735151851323E-4
+104,Pathology and Oncology,205,Organometallic and Medicinal Chemistry,6.065863670149362E-4
+104,Pathology and Oncology,1,Applied Algebra and Methematic,5.899481471266353E-4
+102,Pharmacy and Public Health,200,Analytical Chemistry,5.160604183130809E-4
+104,Pathology and Oncology,403,Biochemical and Ecologyical Engineering,5.066886636109825E-4
+303,Immunology and Rheumatology,403,Biochemical and Ecologyical Engineering,4.906187959894461E-4
+408,Marine Biology and Ecology,202,"Physical, Mathematical and Engineering Science",4.514398633186252E-4
+414,Chemical and Physical Engineering,102,Pharmacy and Public Health,4.463070393049266E-4
+204,Nanotechnology and Materical Chemistry,1,Applied Algebra and Methematic,4.212340689575525E-4
+108,Hematology,205,Organometallic and Medicinal Chemistry,4.1646638069522593E-4
+408,Marine Biology and Ecology,205,Organometallic and Medicinal Chemistry,4.1575446611490276E-4
+414,Chemical and Physical Engineering,304,Nephrology and Biochemistry,4.047890172988328E-4
+205,Organometallic and Medicinal Chemistry,406,"Biogeography, Ecology and Biology",3.432748365173927E-4

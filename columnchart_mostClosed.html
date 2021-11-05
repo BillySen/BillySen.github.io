@@ -1,0 +1,149 @@
+<html>
+
+<head>
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-ui.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-exports.min.js"></script>
+    <link href="https://cdn.anychart.com/releases/v8/css/anychart-ui.min.css" type="text/css" rel="stylesheet">
+    <link href="https://cdn.anychart.com/releases/v8/fonts/css/anychart-font.min.css" type="text/css" rel="stylesheet">
+    <style type="text/css">
+        html,
+        body,
+        #container {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        
+        #container-closedCommu {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .borderexample {
+            border: saddlebrown 5px;
+            border-style: solid;
+        }
+        
+        p {
+            font-family: "Times New Roman", Times, serif;
+            margin-left: 20%;
+            margin-right: 17%;
+            font-size: 22px;
+        }
+    </style>
+
+</head>
+<!-- Most closed communities Demonstration -->
+
+<body>
+
+    <div id="container">
+        <h1 style="text-align: center;">The Most Closed Communities Demonstration</h1>
+        <p class="borderexample">There are 61 records showed and ordered by coefficient descendingly. Occupational Therapy is the one who relatively cites within the community the most. The higher coefficient, the higher the degree of autism of one community. Closed means which
+            only cite a few papers outside their venues.</p>
+    </div>
+
+    <script>
+        anychart.onDocumentReady(function() {
+            var data = [
+                ['Occupational Therapy', 0.95275374],
+                ['Physical Education', 0.941343761],
+                ['Public Administration', 0.941034976],
+                ['Linguistic', 0.93965033],
+                ['Economic History', 0.924067277],
+                ['Hygiene', 0.92163631],
+                ['Philosophy', 0.919644342],
+                ['Wound Care and Nursing', 0.905041836],
+                ['Educational Psychology', 0.897713377],
+                ['Financial Economics', 0.896256405],
+                ['Oral Pathology and Health', 0.892966537],
+                ['Ophthalmology', 0.882171033],
+                ['Applied Algebra and Methematic', 0.863765679],
+                ['Parallel and Distributed Computing', 0.859310829],
+                ['Textile Insititute', 0.853875734],
+                ['Arthroplasty', 0.85117772],
+                ['Biometrics and Statistics', 0.841164139],
+                ['Urology', 0.832153805],         
+                ['Injury Prevention and Safety', 0.823830726],         
+                ['Marketing and Consumer Psychology', 0.813328812],         
+                ['Structures and Engineering', 0.803881203],         
+                ['Dermatopathology', 0.801436631],         
+                ['Career Assessment and Psychology', 0.788364561],         
+                ['Sociology', 0.787074588],         
+                ['International Business Management and Human Behavior', 0.778006028],         
+                ['Geomorphology', 0.775976096],         
+                ['Clinics', 0.753983394],         
+                ['Food Science and Nutrition', 0.751821907],         
+                ['Surgery', 0.745007345],         
+                ['Heart and Cardiology', 0.742773495],         
+                ['Clinical Imaging and Radiology', 0.735468838],         
+                ['Child Development and Adolescence Research', 0.731269949],         
+                ['Chemical and Physical Engineering', 0.704996354],         
+                ['Biogeography, Ecology and Biology', 0.697091202],         
+                ['Psychology, Behavioristics and Pedagogy', 0.69466999],         
+                ['Gerontology', 0.687013805],         
+                ['Biochemical and Ecologyical Engineering', 0.677705605],         
+                ['Liver Disease', 0.674837654],         
+                ['Drug and Alcohol', 0.673982026],         
+                ['Allergy', 0.66536994],         
+                ['Marine Biology and Ecology', 0.664487533],         
+                ['Health Care', 0.662246977],         
+                ['Neurological Science', 0.660697508],         
+                ['Organometallic and Medicinal Chemistry', 0.652754097],         
+                ['Psychiatry', 0.649558591],         
+                ['Botany and Plant Biology', 0.630294586],         
+                ['Neuroscience, Cytology and Brain Science', 0.629412559],         
+                ['Reproductive Endorinology and Metabolism', 0.606418091],         
+                ['Physical, Mathematical and Engineering Science', 0.584879835],         
+                ['Pathology and Oncology', 0.574724289],
+            ]
+
+
+            // sort data by alphabet order
+            data.sort(function(itemFirst, itemSecond) {
+                return itemSecond[1] - itemFirst[1];
+            });
+
+            // create bar chart
+            var chart = anychart.bar();
+
+            // turn on chart animation
+            chart
+                .animation(true)
+                .padding([10, 40, 5, 20])
+                // set chart title text settings
+                .title('Most Closed Communities with Closed-Coefficient');
+
+            // create area series with passed data
+            var series = chart.bar(data);
+            // set tooltip formatter
+            series
+                .tooltip()
+                .position('right')
+                .anchor('left-center')
+                .offsetX(5)
+                .offsetY(0)
+                .format('Closed-Coefficient:{%Value}');
+
+
+            // set titles for axises
+            chart.xAxis().title('Different Scientific Community');
+            chart.yAxis().title('Closed-Coefficient');
+            chart.interactivity().hoverMode('by-x');
+            chart.tooltip().positionMode('point');
+            // set scale minimum
+            chart.yScale().minimum(0);
+
+            // set container id for the chart
+            chart.container('container');
+            // initiate chart drawing
+            chart.draw();
+        });
+    </script>
+</body>
+
+</html>
